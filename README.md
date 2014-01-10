@@ -7,9 +7,10 @@ mobile-log
 
 ```js
   $.log('需要输出的内容')
+  $.log(111,'来个字符串',{aa:'aaa'})
 ```
 
 ## Demo
 
-demo地址：[http://localhost:9100/](http://localhost:9001/)
+demo地址：[http://oos.me/mobile-log/console.html](http://oos.me/mobile-log/console.html)
 
