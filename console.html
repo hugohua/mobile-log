@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Draggable</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+    <style>
+        *{margin: 0; left: 0;}
+        .J_log{position: fixed; left: 0; bottom: 0; width: 100%; height: 100px; overflow: auto; background: #272822; color: #fff;font-family:"\5fae\8f6f\96c5\9ed1","Microsoft YaHei"; padding: 4px;}
+        .J_log li{border-bottom: 1px solid #3B3A32}
+        .J_log span{ display: inline-block; padding:0 4px;}
+        .J_log_string{color: #E5DA59;}
+        .J_log_number{color: #6F72FF;}
+        .J_log_boolean{color: #F92672;}
+        .J_log_dtime{color: #75715E; font-size: 12px;}
+    </style>
+
+</head>
+<body>
+TEST
+
+<script src="js/zepto.js"></script>
+<script src="js/console.js"></script>
+<script>
+    //////
+    $(function(){
+        $.log('good',123,[4,5],[1,2,3,{
+            abc:'abc',
+            bcd:'bcd'
+        }],{
+            eee:'eee',
+            ddd:'ddd'
+        },function a(){});
+        $.log('1')
+        $.log('good',123,true,['aaa','bbb'],[1,2,3,{abc:'abc'}],{
+            abc:'abc',
+            bcd:{
+                ff:'dd'
+            }
+        })
+        $.log('good',123,true,['aaa','bbb'],[1,2,3,{abc:'abc'}],{
+            abc:'abc',
+            bcd:{
+                ff:'dd'
+            }
+        })
+    })
+</script>
+</body>
+</html>
